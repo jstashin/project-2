@@ -1,8 +1,6 @@
 .navbar{
 width: 100%;
 height: 71px;
-margin-left: 150px;
-margin-right: 150px;
 top: 30px;
 display: flex;
 justify-content: space-between;
@@ -25,17 +23,16 @@ text-decoration: none;
 }
 .color1{
     font-weight: 400;
-    color:#8987A1
+    color:#8987A1;
 }
 .banner{
 display: flex;
 justify-content:space-between;
-width: 1140px;
-height: 1186.88px;
-margin-left: 150px;
-margin-right: 150px;
+width: 100%;
+height: 461px;
 margin-top: 50px;
-background-color: #E95A08;
+
+
 
 }
 
@@ -61,8 +58,7 @@ align-items: flex-end;
 .cards{
     display:grid;
 grid-template-columns:repeat(4,1fr);
-margin-left: 150px;
-margin-right: 150px;
+
 }
 .cards1{
 width: 270px;
@@ -87,12 +83,20 @@ border: none;
 
 }
 .plantslover{
-    display:flex;
-    width: 1140px;
+display:flex;
+width: 1140px;
 height: 597px;
 left: 70px;
 top: 2197px;
 align-items: center;
+margin-top:50px;
+}
+.badgeimg{
+width: 120px;
+height: 120px;
+left: 497px;
+top: 1715px;
+
 }
 .img02{
 width: 540px;
@@ -112,11 +116,12 @@ top:100px;
 }
 
 .img31{
-    background-image: url(assets/deal-ana.png);
-    grid-area: img31;
+background-image: url(assets/deal-ana.png);
+grid-area: img31;
 width: 366.22px;
 height: 206px;
 border-radius:10px;
+align-items: center;
 text-align: center;
 background-repeat: no-repeat;
 font-weight: 700;
@@ -131,6 +136,7 @@ height: 268px;
 border-radius:10px;
 text-align: center;
 background-repeat: no-repeat;
+color: #FFFFFF;
 }
 .img33{
 background-image: url(assets/deal-zabo.png);
@@ -140,14 +146,18 @@ height: 423.13px;
 border-radius:10px;
 text-align: center;
 align-items: center;
+color: #FFFFFF;
+}
+.img03shop{
+    color:#FFFFFF;
 }
 .img03{
 width: 100%;
 height: 423.13px;
 left: 150px;
 top: 3187.88px;
-margin-left: 146px;   
 display:grid;
+text-align: center;
 grid-template-areas: "img31 img33"
                      " img32 img33";
 
@@ -160,6 +170,8 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 533px;
+margin-top: 20px;
+
     
 }
 .Join h1{
@@ -169,9 +181,7 @@ height: 533px;
     text-align: center;
 
 }
-.email-form{
-    gap:0;
-}
+
 .email-form input{
  width: 644px;
 height: 50px;
@@ -195,7 +205,7 @@ color:#FFFFFF;
     text-decoration: none;
 }
 .grey{
-    text-decoration-color: #6B7280;
+    color: #6B7280;
 }
 .col2 ul{
    list-style-type: none;
@@ -208,6 +218,7 @@ color:#FFFFFF;
 .footer-section{
     display:grid;
     grid-template-columns:repeat(3,1fr);
+    margin-top: 20px;
     
 }
 .links{
@@ -215,7 +226,7 @@ color:#FFFFFF;
     grid-template-columns:repeat(2,1fr);
      
 }
-edia screen and (max-width:576px) {
+@media screen and (max-width:576px) {
     .home{
         display:none;
     }
@@ -256,7 +267,14 @@ edia screen and (max-width:576px) {
     .join-section{
         background-image: 100%;
     }
+    .footer-section{
+        grid-template-columns: repeat(1,1fr);
+    }
     .links{
         grid-template-columns: repeat(1,1fr);
 
-    }}
+    }
+    .badgeimg{
+        display:none;
+    }
+}
