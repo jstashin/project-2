@@ -206,14 +206,16 @@ color:#FFFFFF;
     text-decoration: none;
 }
 .footer-section{
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    
 }
 .links{
-    display:flex;
-    justify-content: space-between;
+   display:grid;
+    grid-template-columns:repeat(2,1fr);
+     
 }
-@media screen and (max-width:576px) {
+edia screen and (max-width:576px) {
     .home{
         display:none;
     }
@@ -254,12 +256,7 @@ color:#FFFFFF;
     .join-section{
         background-image: 100%;
     }
-    
+    .links{
+        grid-template-columns: repeat(1,1fr);
 
-.logo{
-    flex-direction: column;
-    width:100%;
-}
-.links{
-    flex-direction: column;
-}}
+    }}
