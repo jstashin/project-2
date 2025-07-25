@@ -1,7 +1,8 @@
 .navbar{
 width: 100%;
 height: 71px;
-left: 150px;
+margin-left: 150px;
+margin-right: 150px;
 top: 30px;
 display: flex;
 justify-content: space-between;
@@ -27,10 +28,14 @@ text-decoration: none;
     color:#8987A1
 }
 .banner{
-width: 100%;
-height: 461px;
 display: flex;
 justify-content:space-between;
+width: 1140px;
+height: 1186.88px;
+margin-left: 150px;
+margin-right: 150px;
+margin-top: 50px;
+background-color: #E95A08;
 
 }
 
@@ -50,17 +55,14 @@ height: 355px;
 width: 100%;
 height: 138px;
 text-align: center;
+align-items: flex-end;
 }
-.banner{
-width: 1140px;
-height: 1186.88px;
-left: 178px;
-top: 802px;
 
-}
 .cards{
     display:grid;
 grid-template-columns:repeat(4,1fr);
+margin-left: 150px;
+margin-right: 150px;
 }
 .cards1{
 width: 270px;
@@ -112,7 +114,7 @@ top:100px;
 .img31{
     background-image: url(assets/deal-ana.png);
     grid-area: img31;
-    width: 50%;
+width: 366.22px;
 height: 206px;
 border-radius:10px;
 text-align: center;
@@ -120,13 +122,11 @@ background-repeat: no-repeat;
 font-weight: 700;
 color: #FFFFFF;
 }
-.imm31 a{
-    color: #FFFFFF;
-}
+
 .img32{
     background-image: url(assets/deal-bloom.png);
     grid-area: img32;
-    width: 50%;
+    width: 402px;
 height: 268px;
 border-radius:10px;
 text-align: center;
@@ -135,14 +135,14 @@ background-repeat: no-repeat;
 .img33{
 background-image: url(assets/deal-zabo.png);
 grid-area: img33;
-width: 100%;
+width: 753px;
 height: 423.13px;
 border-radius:10px;
 text-align: center;
 align-items: center;
 }
 .img03{
-width: 1140px;
+width: 100%;
 height: 423.13px;
 left: 150px;
 top: 3187.88px;
@@ -153,6 +153,42 @@ grid-template-areas: "img31 img33"
 
    gap:10px;                  
 }
+.join-section{
+background-image: url(assets/news-letter-bg.png);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 1440px;
+height: 533px;
+    
+}
+.Join h1{
+    font-size: 50px;
+    font-weight: 700;
+    color:#FFFFFF;
+    text-align: center;
+
+}
+.email-form{
+    gap:0;
+}
+.email-form input{
+ width: 644px;
+height: 50px;
+justify-content: center;
+align-items: center;
+border: none;
+padding-left: 13px;
+
+}
+.email-form button{
+width: 186px;
+height: 50px;
+background-color: #E95A08;
+border: none;
+color:#FFFFFF;
+}
+
 @media screen and (max-width:576px) {
     .home{
         display:none;
@@ -191,6 +227,10 @@ grid-template-areas: "img31 img33"
         background-repeat: no-repeat;
     
     }
+    .join-section{
+        background-image: 100%;
+    }
+    
 }
 
 
